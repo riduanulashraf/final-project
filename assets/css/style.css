@@ -115,7 +115,7 @@ body{
     width: 100%;
     background-color: var(--clr-white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.46);
-    z-index: 999;
+    z-index: 99999;
 }
 #main-menu{
     align-items: right;
