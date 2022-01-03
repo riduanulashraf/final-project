@@ -1,24 +1,43 @@
+/*
+   Template Name: Nest
+   Description: virtual edu-consultancy HTML Template
+   Author Name: Riduanul Ashraf
+   Version: 1.0
+
+   Table of Contents
+   ================================================================
+   1) Common Css
+    1.1) slider css
+   2) nav
+   3) banner 
+   4) user-counter
+   5) about
+   6) programs
+   7) destination
+   8) subject
+   9) consultant
+   10) country
+   11) subscribe
+   12) scolarship
+   13) brand
+   14) reviews
+   15) footer
+
 /*common css start*/
 :root{
-    --clr-1: #FA6E44;
-    --clr-2: #257168;
-    --clr-3: #FFF50F;
+    --clr-hover: #FA6E44;
+    --clr-banner-bg: #257168;
+    --clr-yellow: #FFF50F;
+    --clr-common: #0A8375;
     --clr-4: #424C7B;
     --clr-5: #A79997;
-    --clr-6: #FD6A7C;
     --clr-7: #FD2D3A;
-    --clr-8: #0A8375;
-    --clr-9: #FB3749;
     --clr-10: #6E6E6E;
-    --clr-11: #4A4747;
     --clr-12: #E9251F;
     --clr-13: #383838;
-    --clr-14: #F7EAEA;
     --clr-15: #FFFCF9;
     --clr-16: #4E5991;
-    --clr-17: #FFF4EA;
-    --clr-18: #E5E5E5;
-    --clr-19: rgb(182, 182, 182, .28);
+    --clr-19: rgba(182, 182, 182, 0.278);
     
     --clr-white: #FFFFFF;
     --clr-black: #000000;
@@ -28,7 +47,6 @@
     --t-l-4s: all linear .4s;
     --t-l-2s: all linear .2s;
 
-    --clr-8: rgba(19, 165, 158, 0.9);
 }
 h1,h2,h3,h4,h5,h6,
 p,
@@ -66,14 +84,11 @@ body{
     font-weight: 600;
     padding: 10px 0;
 }
-
-
-
-
-
-
-
-
+.information-content{
+    padding: 0 15px;
+    margin-left: -5px;
+}
+/*slider css end*/
 .slider-icon{
 	color: #141414;
 	width: 46px;
@@ -88,23 +103,17 @@ body{
 }
 .slider-icon:hover{
     color: var(--clr-white);
-	background-color: var(--clr-8);
+	background-color: var(--clr-common);
 }
 .slider-icon.fa-chevron-left{
 	left: -10px;
-    top: 105px;
+    top: 110px;
 }
 .slider-icon.fa-chevron-right{
 	right: 0px;
-    top: 105px;
+    top: 110px;
 }
-
-
-
-
-
-
-
+/*slider css end*/
 
 /*common css end*/
 
@@ -129,33 +138,29 @@ body{
     transition: var(--t-l-2s);
 }
 #main-menu ul li:hover a{
-    color: var(--clr-1);
+    color: var(--clr-hover);
 }
 .navbar-right .cs-button{
     background-color: var(--clr-4);
     color: var(--clr-15);
     font-weight: 600;
     font-size: 13px;
-    height: 37px;
-    width: 157px;
+    padding: 10px;
     border: none;
     border-radius: 3px;
 }
 .navbar-right .user-button{
-    background-color: var(--clr-1);
+    background-color: var(--clr-hover);
     border: none;
+    border-radius: 3px;
+    padding: 8px;
+    margin-left: 10px;
 }
 .navbar-right .user-button .fa-bars{
     color: var(--clr-white);
 }
-
-.navbar-right .user-button{  
-    height: 37px;
-    width: 64px;
-    border-radius: 3px;
-}
 .navbar-right .user-button .fa-user{
-    color: var(--clr-8);
+    color: var(--clr-common);
     background-color: var(--clr-white);
     border: 1px solid transparent;
     border-radius: 50%;
@@ -203,7 +208,7 @@ body{
     border: 1px solid transparent;
     height: 935px;
     width: 1335px;
-    background-color: var(--clr-2);
+    background-color: var(--clr-banner-bg);
     transform: rotate(140deg);
     top: -405px;
     left: -665px;
@@ -222,7 +227,7 @@ body{
     width: 94px;
     top: 157px;
     left: -5px;
-    background-color: var(--clr-1);
+    background-color: var(--clr-hover);
     z-index: -1;
 }
 #banner .banner-content::before{
@@ -253,7 +258,7 @@ letter-spacing: -0.05em;
 color: #FFFFFF;
 }
 #banner .banner-content span{
-    color: var(--clr-3);
+    color: var(--clr-yellow);
 }
 #banner .banner-content p{
     font-family: Manrope;
@@ -262,20 +267,27 @@ color: #FFFFFF;
     color: #FFFFFF;
     padding: 20px 0;
 }
-#banner .banner-text .location{
+#banner .banner-text form .location{
     font-family: var(--Jost-font);
     font-size: 14px;
     font-weight: 400;
-    color: var(--clr-white);
+    color: var(--clr-black);
     width: 163px;
-    margin-right: 20px;
+    margin-right: 15px;
 }
-#banner .banner-text .institute{
+#banner .banner-text form .institute{
     font-family: var(--Jost-font);
     font-size: 14px;
     font-weight: 400;
-    color: var(--clr-white);
+    color: var(--clr-black);
     width: 312px;
+    margin-right: 15px;
+}
+#banner .banner-text form button{
+    color: var(--clr-white);
+    border: 1px solid transparent;
+    background-color: var(--clr-4);
+    width: 50px;
 }
 #banner .banner-content img{
     height: 628px;
@@ -329,14 +341,14 @@ padding-top: 30px;
     font-weight: 400;
     color: var(--clr-5);
     padding-bottom: 20px;
-    border-bottom: 2px solid var(--clr-17);
+    border-bottom: 2px solid var(--clr-15);
 }
 #about .about-content .fas{
     color: var(--clr-12);
     height: 45px;
     width: 45px;
     border: 1px solid transparent;
-    background-color: var(--clr-17);
+    background-color: var(--clr-15);
     box-shadow: 0px 9.016px 13.524px rgba(255, 113, 91, 0.25);
     border-radius: 9px;
     padding-top: 12px;
@@ -372,7 +384,7 @@ padding-top: 30px;
     margin-top: 120px;
 }
 #destination .section-header span{
-    color: var(--clr-8);
+    color: var(--clr-common);
 }
 /*destination section end*/
 
@@ -432,7 +444,7 @@ padding-top: 30px;
 #country .country-content h5{
     font-size: 15px;
     font-weight: 500;
-    color: var(--clr-8);
+    color: var(--clr-common);
     line-height: 2;
 }
 #country .country-content p{
@@ -440,13 +452,17 @@ padding-top: 30px;
     font-size: 10px;
     font-weight: 400;
 }
+.country-content ul li{
+    padding: 10px 0;
+}
 #country button{
     color: var(--clr-white);
     height: 33px;
     width: 106px;
     border: none;
-    background-color: var(--clr-8);
+    background-color: var(--clr-common);
     border-radius: 2px;
+    margin-top: 20px;
 }
 /*country section end*/
 
@@ -491,12 +507,14 @@ padding-top: 30px;
     margin-top: 120px;}
 #scholarships .scholarships-content img{
     filter: drop-shadow(0px 9px 16px rgba(186, 94, 94, 0.26));
+    margin-bottom: 20px;
 }
 #scholarships .scholarships-content p{
     font-family: var(--Jost-font);
     font-size: 15px;
     font-weight: 400;
     color: var(--clr-10);
+    margin: 15px 0 10px 0;
 }
 #scholarships .scholarships-content button{
     height: 22px;
@@ -590,7 +608,7 @@ padding-top: 30px;
     transition: var(--t-l-2s);
 }
 #footer .footer-content ul li a:hover{
-    color: var(--clr-1);
+    color: var(--clr-hover);
 }
 .footer-content input{
     height: 40px;
@@ -611,7 +629,7 @@ padding-top: 30px;
 
 
 
-
+/*consultant page start*/
 
 /*consultant-banner section start*/
 #consultant-banner{
@@ -635,21 +653,29 @@ padding-top: 30px;
     font-family: var(--Jost-font);
     font-size: 14px;
     font-weight: 400;
-    color: var(--clr-white);
+    color: var(--clr-black);
     width: 163px;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 #consultant-banner .institute{
     font-family: var(--Jost-font);
     font-size: 14px;
     font-weight: 400;
-    color: var(--clr-white);
+    color: var(--clr-black);
     width: 312px;
+    margin-right: 15px;
 }
 #consultant-banner .banner-content img{
     height: 628px;
     width: 500px;
     padding-top: 60px;
+    margin-right: 15px;
+}
+#consultant-banner form button{
+    color: var(--clr-white);
+    border: 1px solid transparent;
+    background-color: var(--clr-common);
+    width: 50px;
 }
 /*consultant-banner section end*/
 
@@ -678,7 +704,7 @@ padding-top: 30px;
 #consultant-user h5{
     font-size: 19px;
     font-weight: 400;
-    color: var(--clr-8);
+    color: var(--clr-common);
     margin-bottom: 5px;
 }
 #consultant-user p{
@@ -700,7 +726,7 @@ padding-top: 30px;
     margin: 10px 0;
 }
 #consultant-user .consultant-details button .fas{
-    color: var(--clr-8);
+    color: var(--clr-common);
     padding: 5px 10px;
     transition: var(--t-l-2s);
 }
@@ -708,7 +734,7 @@ padding-top: 30px;
     transform: rotate(90deg);
 }
 #consultant-user .consultant-details button:hover{
-    background-color: var(--clr-8);
+    background-color: var(--clr-common);
     color: var(--clr-white);
 }
 #consultant-user .consultant-details button:hover .fas{
@@ -723,54 +749,63 @@ padding-top: 30px;
 }
 /*consultant-user section end*/
 
+/*consultant page end*/
 
 
 
 
 
 
-/*consultant-profile section start*/
-#consultant-profile{
+
+/*consultant-profile page start*/
+#consultant-profile-banner{
+    background-image: url(../images/consultant-profile-banner.png);
+    height: 268px;
+    padding-top: 85px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+/*consultant-details section start*/
+#consultant-details{
     width: 1181px;
     height: 308px;
-    margin: 50px 100px;
+    margin: 120px 100px 0 100px ;
 }
-#consultant-profile .row{
-    padding: 55px 0;
-}
-#consultant-profile img{
+#consultant-details img{
     height: 166px;
     width: 166px;
 }
-#consultant-profile h3{
+#consultant-details h3{
     font-size: 28px;
     font-weight: 600;
     color: var(--clr-black);
     margin-bottom: 10px;
 }
-#consultant-profile h4{
+#consultant-details h4{
     font-size: 20px;
     font-weight: 500;
     color: var(--clr-black);
     margin-bottom: 5px;
 }
-#consultant-profile h5{
+#consultant-details h5{
     font-size: 19px;
     font-weight: 400;
-    color: var(--clr-8);
+    color: var(--clr-common);
     margin-bottom: 5px;
 }
-#consultant-profile p{
+#consultant-details p{
     font-family: var(--Jost-font);
     font-size: 15px;
     margin-bottom: 5px;
 }
-#consultant-profile small{
+#consultant-details small{
     font-weight: 500;
     font-size: 12px;
     margin-bottom: 10px;
 }
-#consultant-profile button{
+#consultant-details button{
     border: none;
     font-size: 20px;
     height: 33px;
@@ -778,34 +813,34 @@ padding-top: 30px;
     transition: var(--t-l-2s);
     margin: 10px 0;
 }
-#consultant-profile .consultant-details button .fas{
-    color: var(--clr-8);
+#consultant-details .consultant-details button .fas{
+    color: var(--clr-common);
     padding: 5px 10px;
     transition: var(--t-l-2s);
 }
-#consultant-profile .consultant-details button .fa-phone{
+#consultant-details .consultant-details button .fa-phone{
     transform: rotate(90deg);
 }
-#consultant-profile .consultant-details button:hover{
-    background-color: var(--clr-8);
+#consultant-details .consultant-details button:hover{
+    background-color: var(--clr-common);
     color: var(--clr-white);
 }
-#consultant-profile .consultant-details button:hover .fas{
+#consultant-details .consultant-details button:hover .fas{
     color: var(--clr-white);
 }
-#consultant-profile .fa-star{
+#consultant-details .fa-star{
     color: #F9B70D;
 }
-#consultant-profile .consultant-details a{
-    color: var(--clr-8);
+#consultant-details .consultant-details a{
+    color: var(--clr-common);
 }
-/*consultant-profile section end*/
+/*consultant-details section end*/
 
-
-
+/*pricing section start*/
 #pricing{
     background-image: url(../images/chat-bg.png);
     height: 640px;
+    margin-top: 120px;
     color: var(--clr-white);
     position: relative;
     z-index: 2;
@@ -817,6 +852,18 @@ padding-top: 30px;
 	width:100%;
 	background-color:rgba(19, 165, 158, 0.9);
 	z-index:-2;
+}
+#pricing::after{
+	content:'';
+	position:absolute;
+    border: 1px solid var(--clr-white);
+	width:100%;
+    top: 100px;
+	z-index:-2;
+}
+
+#pricing .pricing-header{
+    padding: 45px 0 10px 0;
 }
 #pricing h3{
     font-size: 36px;
@@ -831,3 +878,73 @@ padding-top: 30px;
     font-weight: 600;
     padding: 0 10px;
 }
+#pricing .pricing-content{
+    padding: 100px 0;
+}
+#pricing .pricing-content a{
+    font-family: var(--Jost-font);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--clr-white);
+    background-color: var(--clr-hover);
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+#pricing .pricing-content img{
+    margin-top: -20px;
+}
+
+#pricing .pricing-content h4{
+    margin-bottom: 50px;
+}
+#pricing .pricing-content .content{
+    margin-top: 75px;
+}
+/*pricing section end*/
+
+/*educational-background section start*/
+#education-background{
+    height: 730px;
+    background-color:#192149F7;
+    margin-top: 120px;
+    color: var(--clr-white);
+    font-family: var(--manpore-font);
+}
+#education-background .section-header h2{
+    font-size: 45px;
+    font-weight: 500;
+    color: var(--clr-white);
+    padding: 80px 0 50px 40px ;
+}
+.education-background-content{
+    border: 1px solid var(--clr-white);
+    border-radius: 15px;
+    height: 435px;
+}
+.education-background-content h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--clr-yellow);
+    padding: 35px 40px;
+}
+.education-background-content ul{
+    padding: 0 0 40px 30px;
+    border-bottom: 1px solid var(--clr-white);
+}
+.education-background-content ul li{
+    display: inline-block;
+    list-style-type: disc;
+    padding: 0 20px;
+}
+.education-background-content p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 38px;
+    width: 750px;
+    padding: 30px 0  50px 40px;
+}
+/*educational-background section end*/
+
+/*consultant-profile page end*/

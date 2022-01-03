@@ -14,7 +14,7 @@
    <!-- Fontawesome Css Link -->
    <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
    <!-- Slick Css Link -->
-   <link rel="stylesheet" href="./assets/css/slick.min.css">
+   <link rel="stylesheet" href="./assets/css/slick.css">
    <!-- Bootstrap Css Link -->
    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
    <!-- Main Css Link -->
@@ -36,14 +36,14 @@
       <div class="collapse navbar-collapse" id="main-menu">
          <ul class="navbar-nav m-e">
             <li class="nav-item">
-               <a class="nav-link" href="#">Home</a>
+               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="#">Diploma</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#">undergraduate </a>
-            </li>
+                <a class="nav-link" href="consultants.html">Page:02<!--Diploma--></a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="consultants-profile.html">Page:03<!--undergraduate--> </a>
+             </li>
             <li class="nav-item">
                <a class="nav-link" href="#">postgraduate </a>
             </li>
@@ -53,11 +53,11 @@
          </ul>
       </div>
       <div class="navbar-right">
-         <button class="cs-button" type="button">Become a Consultants</button>
-         <button class="user-button" type="button">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-user"></i>
-         </button>
+        <a class="cs-button" href="#">Become a Consultants</a>
+        <a class="user-button" href="consultants-profile.html">
+           <i class="fas fa-bars"></i>
+           <i class="fas fa-user"></i>
+        </a>
       </div>
    </div>
 </nav>
@@ -69,12 +69,15 @@
        <div class="section-header">
             <h2>Consultants Directory</h2>
        </div>
-        <div class="row">
+       <form class="row search-box" action="#"> 
             <input type="text" class="form-control location" placeholder="London">
             <input type="text" class="form-control institute" placeholder="Oxford University">
+            <button class="btn">
+                <i class="fas fa-search"></i>
+            </button>
             <small class="location">Based on your Location</small>
             <small class="institute">Ex : university,Department,program name</small>
-        </div>
+        </form>
    </div>
 </section>
 <!--banner section end-->

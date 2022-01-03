@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>consultant-profile</title>
+   <title>consultant-details</title>
    <!-- Favicon link -->
    <link rel="icon" href="./assets/images/Favicon.png">
    <!--fonts link-->
@@ -14,7 +14,7 @@
    <!-- Fontawesome Css Link -->
    <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
    <!-- Slick Css Link -->
-   <link rel="stylesheet" href="./assets/css/slick.min.css">
+   <link rel="stylesheet" href="./assets/css/slick.css">
    <!-- Bootstrap Css Link -->
    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
    <!-- Main Css Link -->
@@ -36,13 +36,13 @@
       <div class="collapse navbar-collapse" id="main-menu">
          <ul class="navbar-nav m-e">
             <li class="nav-item">
-               <a class="nav-link" href="#">Home</a>
+               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="#">Diploma</a>
+               <a class="nav-link" href="consultants.html">Page:02<!--Diploma--></a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="#">undergraduate </a>
+               <a class="nav-link" href="consultants-profile.html">Page:03<!--undergraduate--> </a>
             </li>
             <li class="nav-item">
                <a class="nav-link" href="#">postgraduate </a>
@@ -53,34 +53,24 @@
          </ul>
       </div>
       <div class="navbar-right">
-         <button class="cs-button" type="button">Become a Consultants</button>
-         <button class="user-button" type="button">
+         <a class="cs-button" href="#">Become a Consultants</a>
+         <a class="user-button" href="consultants-profile.html">
             <i class="fas fa-bars"></i>
             <i class="fas fa-user"></i>
-         </button>
+         </a>
       </div>
    </div>
 </nav>
 <!--navbar section end-->
 
 <!--banner section start-->
-<section id="consultant-banner">
-   <div class="consultant-banner-content">
-       <div class="section-header">
-            <h2>Consultants Directory</h2>
-       </div>
-        <div class="row">
-            <input type="text" class="form-control location" placeholder="London">
-            <input type="text" class="form-control institute" placeholder="Oxford University">
-            <small class="location">Based on your Location</small>
-            <small class="institute">Ex : university,Department,program name</small>
-        </div>
-   </div>
+<section id="consultant-profile-banner">
+
 </section>
 <!--banner section end-->
 
-<!--consultant-profile section start-->
-<section id="consultant-profile">
+<!--consultant-details section start-->
+<section id="consultant-details">
     <div class="container">
         <div class="row">
             <div class="col-2">
@@ -107,8 +97,30 @@
         </div>
     </div>
 </section>
-<!--consultant-profile section end-->
+<!--consultant-details section end-->
 
+<!--education-background section start-->
+<section id="education-background">
+   <div class="container">
+      <div class="section-header">
+         <h2>Education Background</h2>
+      </div>
+      <div class="education-background-content">
+         <h3>COMPUTER ENGINEERING </h3>
+         <ul>
+            <li>Bsc</li>
+            <li>UNIVERSITY OF CALIFORNIA</li>
+            <li>2012 - 2016</li>
+         </ul>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivam sit amet ligula non 
+             Lorem ipsum dolor sit amet, consectetur adipiscingVivam sit amet ligula non lectus cursus egestas.
+             Cras erat lorem, fringilla quis sagittis in, sagittis inNamlectus cursus egestas. 
+             Cras erat lorem , fringilla quis sagittis in, sagittis inNam
+         </p>
+      </div>
+   </div>
+</section>
+<!--education-background section end-->
 
 
 
@@ -117,7 +129,7 @@
 
 <section id="pricing">
     <div class="container">
-        <div class="d-flex justify-content-between">
+        <div class="pricing-header d-flex justify-content-between">
             <h3>
                 My pricing & Offer
             </h3>
@@ -134,7 +146,7 @@
             </ul>
         </div>
         <div class="row pricing-content chat">
-            <div class="col-6">
+            <div class="col-6 content">
                 <h4>Start an online <br>
                      chat consultation <br>
                     with a me</h4>

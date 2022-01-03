@@ -10,10 +10,10 @@ $(function () {
    })
 
    $('.slider-content').slick({
-      fade:true,
-      
+      autoPlay: true,
+      autoplaySpeed: 3000,
       speed:1000,
-      slidesToShow:3,
+      slidesToShow:4,
       slidesToScroll:1,
       prevArrow:'<i class="fas fa-chevron-left slider-icon"></i>',
       nextArrow:'<i class="fas fa-chevron-right slider-icon"></i>',

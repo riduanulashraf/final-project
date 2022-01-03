@@ -36,13 +36,13 @@
       <div class="collapse navbar-collapse" id="main-menu">
          <ul class="navbar-nav m-e">
             <li class="nav-item">
-               <a class="nav-link" href="#">Home</a>
+               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="#">Diploma</a>
+               <a class="nav-link" href="consultants.html">Page:02<!--Diploma--></a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="#">undergraduate </a>
+               <a class="nav-link" href="consultants-profile.html">Page:03<!--undergraduate--> </a>
             </li>
             <li class="nav-item">
                <a class="nav-link" href="#">postgraduate </a>
@@ -53,11 +53,11 @@
          </ul>
       </div>
       <div class="navbar-right">
-         <button class="cs-button" type="button">Become a Consultants</button>
-         <button class="user-button" type="button">
+         <a class="cs-button" href="#">Become a Consultants</a>
+         <a class="user-button" href="consultants-profile.html">
             <i class="fas fa-bars"></i>
             <i class="fas fa-user"></i>
-         </button>
+         </a>
       </div>
    </div>
 </nav>
@@ -73,13 +73,15 @@
             <p>Choose your dream destination and Talk with our consultants about 
                you confusion and take right desicion.
             </p>
-            <div class="row">
+            <form class="row search-box" action="#"> 
                <input type="text" class="form-control location" placeholder="London">
                <input type="text" class="form-control institute" placeholder="Oxford University">
+               <button class="btn">
+                  <i class="fas fa-search"></i>
+               </button>
                <small class="location">Based on your Location</small>
                <small class="institute">Ex : university,Department,program name</small>
-            </div>
-
+            </form>
          </div>
          <div class="col-lg-5">
             <img src="assets/images/banner-1.png" alt="image">
@@ -200,7 +202,7 @@
          <h2>Explore the world's most popular <span>study destinations</span></h2>
       </div>
       <div class="destination-content-row">
-         <div class="row slider-content">
+         <div class="slider-content">
             <div class="information-content">
                <img src="assets/images/country-1.jpg" alt="image">
                <h5>London</h5>
@@ -234,7 +236,7 @@
          <h2>Most popular <span>Subject</span> for build your Future.</h2>
       </div>
       <div class="Subject-content-row">
-         <div class="row slider-content">
+         <div class="slider-content">
             <div class="information-content">
                <img src="assets/images/subject-1.jpg" alt="image">
                <h5>Information Technology</h5>
