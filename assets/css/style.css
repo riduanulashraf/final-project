@@ -133,12 +133,21 @@ body{
 }
 #main-menu ul li a{
     color: var(--clr-13);
-    font-style: 15px;
+    font-size: 18px;
     font-weight: 600;
     transition: var(--t-l-2s);
 }
 #main-menu ul li:hover a{
     color: var(--clr-hover);
+}
+nav .navbar-toggler{
+    color: var(--clr-hover);
+    border: 4px solid var(--clr-hover);
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+    color: var(--clr-white);
+    background-color: var(--clr-hover);
 }
 .navbar-right .cs-button{
     background-color: var(--clr-4);
@@ -182,13 +191,14 @@ body{
       top:0;
     }
   }
+
+
   
 /*nav section end*/
 
 /*banner section start*/
 #banner{
     background-image: url(../images/banner_bg.jpg);
-    height: 628px;
     padding-top: 85px;
     position: relative;
     overflow: hidden;
@@ -305,10 +315,10 @@ font-family: var(--Jost-font);
 text-align: center;
 padding-top: 30px;
 }
-#user-counter .col-lg-3{
+#user-counter .col-3{
     position: relative;
 }
-#user-counter .col-lg-3::before{
+#user-counter .col-3::before{
     content: '';
     border-right: 4px solid var(--clr-16);
     height: 142px;
@@ -317,7 +327,7 @@ padding-top: 30px;
     left: 0;
     z-index: 11;
 }
-#user-counter .col-lg-3:nth-child(1)::before{
+#user-counter .col-3:nth-child(1)::before{
     content: '';
     border: none;
 }
@@ -341,7 +351,6 @@ padding-top: 30px;
     font-weight: 400;
     color: var(--clr-5);
     padding-bottom: 20px;
-    border-bottom: 2px solid var(--clr-15);
 }
 #about .about-content .fas{
     color: var(--clr-12);
