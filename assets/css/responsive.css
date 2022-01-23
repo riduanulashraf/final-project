@@ -41,6 +41,7 @@
    }
    .navbar{
       height: 50px;
+      width: 320px;
    }
    .navbar-brand{
       width: 115px;
@@ -171,6 +172,20 @@
    #subscribe .subscribe-button {
       height: 35px;
       width: 200px;
+   }
+   #country .country-content h3 {
+      font-size: 14px;
+   }
+   #country .country-content h5 {
+      font-size: 12px;
+      line-height: 1;
+   }
+
+
+
+   #consultant .consultant-content p {
+      font-size: 12px;
+      padding-bottom: 22px;
    }
 }
 /* //Landscape Phone Responsive Css End */

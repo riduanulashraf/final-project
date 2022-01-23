@@ -19,7 +19,7 @@ $(function () {
       nextArrow:'<i class="fas fa-chevron-right slider-icon"></i>',
       responsive: [
          {
-           breakpoint: 375,
+           breakpoint: 376,
            settings: {
              slidesToShow: 1,
              slidesToScroll: 1,
