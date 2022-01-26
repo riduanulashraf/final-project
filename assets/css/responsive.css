@@ -25,11 +25,38 @@
 
 
 /*Landscape Phone Responsive Css Start */
-@media (min-width: 320px) and (max-width: 374.98px) {
+@media (max-width: 575.98px) {
+
+   
+   .slider-icon.fa-chevron-left {
+      left: 10px;
+      top: 85px;
+   }
+   .slider-icon.fa-chevron-right {
+      right: 10px;
+      top: 85px;
+   }
+   .slider-icon {
+      width: 35px;
+      height: 35px;
+      padding: 12px;
+      font-size: 13px;
+   }
+
+
+
+
+
+
+
+
    .information-content h5{
       font-size: 16px;
       font-weight: 600;
       padding: 10px 0;
+   }
+   .information-content img{
+      padding: 0 30px;
    }
    .information-content{
       padding: 0 15px;
@@ -41,7 +68,6 @@
    }
    .navbar{
       height: 50px;
-      width: 320px;
    }
    .navbar-brand{
       width: 115px;
@@ -81,7 +107,16 @@
       font-size: 14px;
       height: 30px;
       width: 40px;
-   }#user-counter{
+   }
+   #banner .banner-content img {
+      display: none;
+   }
+   
+   
+   
+   
+   
+   #user-counter{
       height: 60px;
       padding-top: 5px;
    }
@@ -182,10 +217,23 @@
    }
 
 
-
+      
+   #consultant{
+      height: 270px;
+      margin-top: 40px;
+   }
    #consultant .consultant-content p {
       font-size: 12px;
-      padding-bottom: 22px;
+      padding: 0 55px 45px 0; 
+   }
+   #consultant .consultant-text{
+      width: 300px;
+      padding: 60px 0;
+   }
+   #consultant .cs-button {
+      font-size: 11px;
+      height: 35px;
+      width: 130px;
    }
 }
 /* //Landscape Phone Responsive Css End */
