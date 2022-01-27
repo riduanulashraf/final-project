@@ -78,6 +78,13 @@
    .navbar-right{
       display: none;
    }
+
+
+
+
+
+
+
    #banner .banner-content h1 {
       font-size: 20px;
       line-height: 30px;
@@ -86,6 +93,9 @@
       font-size: 9px;
       line-height: 20px;
       padding: 5px 0;
+   }
+   #banner .banner-text{
+      padding-bottom: 20px;
    }
    #banner form small{
       display: none;
@@ -111,7 +121,25 @@
    #banner .banner-content img {
       display: none;
    }
-   
+   #banner::before {
+      top: 0px;
+   }
+   #banner .banner-content::after {
+      content: '';
+      position: absolute;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      top: -3px;
+      left: 4px;
+      background-color: var(--clr-hover);
+      z-index: -1;
+   }
+   #banner::after {
+      height: 550px;
+      transform: rotate(136deg)
+   }
    
    
    
@@ -129,6 +157,7 @@
    #user-counter .col-3::before {
       height: 60px;
       top: -5px;
+      border-right: 2px solid var(--clr-16);
    }
 
 
@@ -188,11 +217,16 @@
    
       
    #subscribe{
-      height: 400px;
+      height: 270px;
       margin-top: 40px;
+      background-image: url(../images/newsletter_thumb.png);
+      background-size: 150px 150px;
    }
    #subscribe .subscribe-img{
       display: none;
+   }
+   #subscribe .subscribe-content{
+       margin-top: 40px;
    }
    #subscribe .subscribe-content p{
       font-size: 12px;
@@ -208,6 +242,12 @@
       height: 35px;
       width: 200px;
    }
+
+
+
+
+
+   
    #country .country-content h3 {
       font-size: 13px;
    }
@@ -234,6 +274,52 @@
       font-size: 11px;
       height: 35px;
       width: 130px;
+   }
+
+
+
+
+   
+   #brand{
+      margin-top: 40px;
+   }
+   
+   .brand-slider-icon.fa-chevron-left {
+      left: -5px;
+      top: 55px;
+   }
+   .brand-slider-icon.fa-chevron-right {
+      right: -5px;
+      top: 55px;
+   }
+
+
+
+
+
+
+
+
+
+   #footer {
+      height: 565px;
+      margin-top: 40px;
+   }
+   #footer .footer-header h3 {
+    font-size: 18px;
+    padding-top: 30px;
+   }
+   #footer .footer-content {
+      padding-top: 10px;
+   }
+   #footer .footer-content ul li a {
+      font-size: 14px;
+   }
+   #footer .footer-content ul li {
+      padding: 3px 0;
+   }
+   .ftr-sub{
+      padding-bottom: 40px;
    }
 }
 /* //Landscape Phone Responsive Css End */

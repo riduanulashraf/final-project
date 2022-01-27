@@ -27,5 +27,24 @@ $(function () {
          },
       ]
   })
+  $('.brand-slider').slick({
+     autoPlay: true,
+     autoplaySpeed: 3000,
+     speed:1000,
+     slidesToShow:4,
+     slidesToScroll:1,
+     prevArrow:'<i class="fas fa-chevron-left slider-icon brand-slider-icon"></i>',
+     nextArrow:'<i class="fas fa-chevron-right slider-icon brand-slider-icon"></i>',
+     responsive: [
+        {
+          breakpoint: 376,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+     ]
+ })
+  
 
 })
