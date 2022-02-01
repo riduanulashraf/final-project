@@ -4,15 +4,220 @@
 }
 /* //Larger Desktop or Tv Responsive Css End */
 
-
-/* Large Desktop or Tv Responsive Css Start */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-
-}
-/* //Large Desktop or Tv Responsive Css End */
-
 /* Desktop or Tv Responsive Css Start */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+   .section-header h2 {
+      font-size: 34px;
+   }.slider-icon.fa-chevron-left {
+      left: -13px;
+      top: 100px;
+   }
+   .slider-icon.fa-chevron-right {
+      right: -10px;
+      top: 100px;
+   }
+
+
+
+
+
+   #main-menu ul li a {
+      font-size: 16px;
+   }
+   #banner .banner-content h1 {
+      font-size: 43px;
+      line-height: 50px;
+   }
+   #banner .banner-content img {
+      height: 520px;
+      width: 415px;
+      padding-top: 35px;
+   }
+   #banner .banner-content p {
+      font-size: 18px;
+   }
+   #banner .banner-content::after {
+      height: 80px;
+      width: 80px;
+      top: 114px;
+      left: 0px;
+   }
+   .navbar-right .cs-button {
+      font-size: 12px;
+      padding: 10px;
+   }
+   .navbar-right .user-button {
+      padding: 7px;
+      margin-left: 8px;
+   }
+   #banner .banner-text form .location {
+      width: 163px;
+      margin-right: 12px;
+      font-size: 13px;
+   }
+   #banner .banner-text form .institute {
+      width: 295px;
+      margin-right: 12px;
+      font-size: 13px;
+   }
+   #banner .banner-content::before {
+      background-size: cover;
+      height: 151px;
+      width: 150px;
+      top: 360px;
+      left: 505px;
+   }
+
+
+
+
+
+   #user-counter {
+      height: 120px;
+      padding-top: 28px;
+   }
+   #user-counter .col-3::before {
+      border-right: 3px solid var(--clr-16);
+      height: 120px;
+      top: -28px;
+      left: 0;
+   }
+
+
+
+
+   #about {
+      margin-top: 100px;
+   }
+   #about img {
+      height: 380px;
+      width: 490px;
+   }
+   #about .about-head p {
+      margin-bottom: 15px;
+   }
+   #about .about-head h2 {
+      margin-bottom: 30px;
+   }
+   #about .about-content .information-content h5 {
+      padding-bottom: 25px;
+   }
+   #about .about-content p {
+      font-size: 12px;
+      padding-bottom: 15px;
+   }
+
+
+
+   
+   #programs {
+      margin-top: 100px;
+   }
+
+   #destination{
+      margin-top: 100px;
+   }
+
+   #Subject{
+      margin-top: 100px;
+   }
+
+
+   #consultant {
+      height: 325px;;
+      margin-top: 100px;
+   }
+   #consultant .consultant-text {
+      width: 400px;
+      padding-top: 50px;
+   }
+   .section-header h2 {
+      padding-bottom: 25px;
+   }
+   #consultant .consultant-content p {
+      font-size: 21px;
+      padding-bottom: 25px;
+   }
+
+
+
+
+   #country {
+      margin-top: 100px;
+   }
+   .country-content ul li {
+      padding: 7px 0;
+   }
+
+
+
+   #subscribe {
+      height: 380px;
+      margin-top: 100px;
+   }
+   #subscribe .subscribe-content {
+      margin-top: 55px;
+   }
+
+
+
+
+   #scholarships {
+      margin-top: 100px;
+   }
+   #scholarships .scholarships-content img {
+      margin-bottom: 15px;
+   }
+   #scholarships .scholarships-content p {
+      font-size: 14px;
+      margin: 10px 0 5px 0;
+   }
+
+
+
+   #brand {
+      margin-top: 100px;
+   }
+   #brand .brand-content {
+      margin: 0 7px;
+   }
+   #brand .brand-content img {
+      margin: 20px 30px;
+   }
+   #brand .brand-slider-icon.fa-chevron-left {
+      left: -23px;
+      top: 45px;
+   }
+   #brand .brand-slider-icon.fa-chevron-right {
+      right: -19px;
+      top: 45px;
+   }
+
+
+
+
+   #reviews {
+      margin-top: 100px;
+   }
+
+
+
+
+   #footer {
+      height: 320px;
+      margin-top: 100px;
+   }
+   #footer .footer-header h3 {
+      font-size: 19px;
+      padding-top: 70px;
+   }
+   #footer .footer-content ul li {
+      padding: 6px 0;
+   }
+   #footer .footer-content ul li a {
+      font-size: 17px;
+   }
+
 
 }
 /* //Desktop or Tv Responsive Css End */
@@ -25,30 +230,8 @@
 
 
 /*Landscape Phone Responsive Css Start */
-@media (max-width: 575.98px) {
-
-   
-   .slider-icon.fa-chevron-left {
-      left: 10px;
-      top: 85px;
-   }
-   .slider-icon.fa-chevron-right {
-      right: 10px;
-      top: 85px;
-   }
-   .slider-icon {
-      width: 35px;
-      height: 35px;
-      padding: 12px;
-      font-size: 13px;
-   }
-
-
-
-
-
-
-
+@media (max-width: 425.98px) {
+   /*common css start*/
 
    .information-content h5{
       font-size: 16px;
@@ -66,6 +249,27 @@
       font-size: 18px;
       padding-bottom: 15px;
    }
+
+   /*slider css start*/
+   .slider-icon.fa-chevron-left {
+      left: 10px;
+      top: 85px;
+   }
+   .slider-icon.fa-chevron-right {
+      right: 10px;
+      top: 85px;
+   }
+   .slider-icon {
+      width: 35px;
+      height: 35px;
+      padding: 12px;
+      font-size: 13px;
+      }
+   /*slider css end*/
+
+   /*common css end*/
+
+   /*nav section start*/
    .navbar{
       height: 50px;
    }
@@ -78,13 +282,9 @@
    .navbar-right{
       display: none;
    }
+   /*nav section end*/
 
-
-
-
-
-
-
+   /*banner section start*/
    #banner .banner-content h1 {
       font-size: 20px;
       line-height: 30px;
@@ -140,10 +340,9 @@
       height: 550px;
       transform: rotate(136deg)
    }
+   /*banner section end*/
    
-   
-   
-   
+   /*user-counter section start*/
    #user-counter{
       height: 60px;
       padding-top: 5px;
@@ -159,10 +358,9 @@
       top: -5px;
       border-right: 2px solid var(--clr-16);
    }
+   /*user-counter section end*/
 
-
-
-
+   /*about section start*/
    #about{
        margin-top: 40px;
    }
@@ -192,30 +390,57 @@
       font-size: 9px;
       margin-bottom: 5px;
    }
+   /*about section end*/
 
-
-
-      
+   /*programs section start*/
    #programs{
       margin-top: 40px;
    }
+   /*programs section end*/
 
-
-
-    
+   /*destination section start*/
    #destination{
       margin-top: 40px;
    }
+   /*destination section end*/
 
-
-   
+   /*Subject section start*/
    #Subject{
       margin-top: 40px;
    }
+   /*Subject section end*/
 
+   /*consultant section start*/
+   #consultant{
+      height: 270px;
+      margin-top: 40px;
+   }
+   #consultant .consultant-content p {
+      font-size: 12px;
+      padding: 0 55px 45px 0; 
+   }
+   #consultant .consultant-text{
+      width: 300px;
+      padding: 60px 0;
+   }
+   #consultant .cs-button {
+      font-size: 11px;
+      height: 35px;
+      width: 130px;
+   }
+   /*consultant section end*/
 
-   
-      
+   /*country section start*/
+   #country .country-content h3 {
+      font-size: 13px;
+   }
+   #country .country-content h5 {
+      font-size: 12px;
+      line-height: 1;
+   }
+   /*country section end*/
+
+   /*subscribe section start*/
    #subscribe{
       height: 270px;
       margin-top: 40px;
@@ -242,44 +467,9 @@
       height: 35px;
       width: 200px;
    }
+   /*subscribe section end*/
 
-
-
-
-
-   
-   #country .country-content h3 {
-      font-size: 13px;
-   }
-   #country .country-content h5 {
-      font-size: 12px;
-      line-height: 1;
-   }
-
-
-      
-   #consultant{
-      height: 270px;
-      margin-top: 40px;
-   }
-   #consultant .consultant-content p {
-      font-size: 12px;
-      padding: 0 55px 45px 0; 
-   }
-   #consultant .consultant-text{
-      width: 300px;
-      padding: 60px 0;
-   }
-   #consultant .cs-button {
-      font-size: 11px;
-      height: 35px;
-      width: 130px;
-   }
-
-
-
-
-   
+   /*brand section start*/
    #brand{
       margin-top: 40px;
    }
@@ -292,15 +482,9 @@
       right: -5px;
       top: 55px;
    }
+   /*brand section end*/
 
-
-
-
-
-
-
-
-
+   /*footer section start*/
    #footer {
       height: 565px;
       margin-top: 40px;
@@ -321,6 +505,7 @@
    .ftr-sub{
       padding-bottom: 40px;
    }
+   /*footer section end*/
 }
 /* //Landscape Phone Responsive Css End */
 
